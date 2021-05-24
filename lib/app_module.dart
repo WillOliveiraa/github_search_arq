@@ -3,6 +3,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:github_search_arq/modules/search/domain/usecases/search_by_text.dart';
 import 'package:github_search_arq/modules/search/external/datasources/github_datasource.dart';
 import 'package:github_search_arq/modules/search/infra/repositores/search_repository_impl.dart';
+import 'package:github_search_arq/modules/search/presenter/search/search_page.dart';
 
 class AppModule extends Module {
   @override
@@ -14,5 +15,7 @@ class AppModule extends Module {
   ];
 
   @override
-  final List<ModularRoute> routes = [];
+  final List<ModularRoute> routes = [
+    ChildRoute('/', child: (_, args) => SearchPage()),
+  ];
 }

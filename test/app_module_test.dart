@@ -9,7 +9,7 @@ import 'package:github_search_arq/modules/search/domain/entities/result_search.d
 import 'package:github_search_arq/modules/search/domain/usecases/search_by_text.dart';
 import 'package:mockito/mockito.dart';
 
-import 'modules/external/utils/github_response.dart';
+import 'modules/search/external/utils/github_response.dart';
 
 class DioMock extends Mock implements Dio {}
 
