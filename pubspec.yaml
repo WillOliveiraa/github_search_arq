@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  flutter_modular: ^3.2.2+1
   dio: ^4.0.0
   dartz:
   flutter:
@@ -32,6 +33,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  flutter_modular_test: ^1.0.1
   mockito: ^5.0.8
   flutter_test:
     sdk: flutter
