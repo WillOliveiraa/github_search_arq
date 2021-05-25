@@ -5,6 +5,8 @@ import 'package:github_search_arq/modules/search/external/datasources/github_dat
 import 'package:github_search_arq/modules/search/infra/repositores/search_repository_impl.dart';
 import 'package:github_search_arq/modules/search/presenter/search/search_page.dart';
 
+import 'modules/search/presenter/search/serach_bloc.dart';
+
 class AppModule extends Module {
   @override
   final List<Bind> binds = [
@@ -12,6 +14,7 @@ class AppModule extends Module {
     Bind((i) => GithubDataSource(i())),
     Bind((i) => SearchRepositoryImpl(i())),
     Bind((i) => SearchByTextImpl(i())),
+    Bind((i) => SearchBloc(i())),
   ];
 
   @override
